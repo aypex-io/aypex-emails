@@ -1,0 +1,17 @@
+<%= Aypex.t('shipment_mailer.shipped_email.dear_customer', name: name_for(@shipment.order)) %>
+
+<%= Aypex.t('shipment_mailer.shipped_email.instructions', number: @shipment.order.number) %>
+
+============================================================
+<%= Aypex.t('shipment_mailer.shipped_email.shipment_summary') %>
+============================================================
+<% @shipment.manifest.each do |item| %>
+  <%= item.variant.sku %> <%= item.variant.product.name %> <%= item.variant.options_text %>
+<% end %>
+============================================================
+
+<%= Aypex.t('shipment_mailer.shipped_email.track_information', tracking: @shipment.tracking) if @shipment.tracking %>
+<%= Aypex.t('shipment_mailer.shipped_email.track_link', url: @shipment.tracking_url) if @shipment.tracking_url %>
+
+<%= Aypex.t('shipment_mailer.shipped_email.thanks') %>
+<%= Aypex.t('shipment_mailer.shipped_email.store_team', store_name: current_store.name) %>

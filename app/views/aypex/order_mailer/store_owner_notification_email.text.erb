@@ -1,0 +1,12 @@
+<%= Aypex.t('order_mailer.store_owner_notification_email.heading') %>
+
+<%= Aypex.t('order_mailer.store_owner_notification_email.instructions') %>
+
+============================================================
+<%= Aypex.t('order_mailer.store_owner_notification_email.order_summary', number: @order.number) %>
+============================================================
+<%= render 'aypex/shared/purchased_items_table', line_items: @order.line_items, order: @order %>
+============================================================
+<%= Aypex.t('order_mailer.total') %> <%= @order.display_total %>
+<%= Aypex.t('order_mailer.store_owner_notification_email.thanks') %>
+<%= Aypex.t('order_mailer.store_team', store_name: current_store.name) %>
