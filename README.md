@@ -1,30 +1,40 @@
 # Aypex::Emails
-Short description and motivation.
 
 ## Usage
 How to use my plugin.
 
 ## Installation
+
+Create a new rails app
+```bash
+rails new [app_name] --database=postgresql -a propshaft
+```
+
 Add this line to your application's Gemfile:
 
 ```ruby
+gem "aypex"
 gem "aypex-emails"
 ```
 
 And then execute:
 ```bash
-$ bundle
+bundle
 ```
 
-Or install it yourself as:
 ```bash
-$ gem install aypex-emails
+bin/rails g aypex:emails:install
 ```
 
-## Contributing
-Contribution directions go here.
+## Testing
+
+```bash
+bundle exec rake test_app
+```
+
+```bash
+bundle exec rspec spec
+```
 
 ## License
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-
+The gem is available as open source under the terms of the [MIT License](https://github.com/aypex-io/aypex-emails/blob/main/MIT-LICENSE).
