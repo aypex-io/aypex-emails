@@ -1,3 +1,6 @@
+[![AYPEX::Emails CI](https://github.com/aypex-io/aypex-emails/actions/workflows/ci.yml/badge.svg)](https://github.com/aypex-io/aypex-emails/actions/workflows/ci.yml)
+[![Standard RB](https://github.com/aypex-io/aypex-emails/actions/workflows/standard_rb_core.yml/badge.svg)](https://github.com/aypex-io/aypex-emails/actions/workflows/standard_rb_core.yml)
+
 # Aypex::Emails
 
 ## Usage
