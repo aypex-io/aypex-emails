@@ -15,8 +15,8 @@ Gem::Specification.new do |spec|
   # spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/aypex/aypex/tree/v#{spec.version}"
-  spec.metadata["changelog_uri"] = "https://github.com/aypex/aypex/releases/tag/v#{spec.version}"
+  spec.metadata["source_code_uri"] = "https://github.com/aypex-io/aypex-emails/tree/v#{spec.version}"
+  spec.metadata["changelog_uri"] = "https://github.com/aypex-io/aypex-emails/releases/tag/v#{spec.version}"
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
