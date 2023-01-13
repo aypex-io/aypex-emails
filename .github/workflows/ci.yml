@@ -1,5 +1,5 @@
 ---
-name: AYPEX::Emails CI
+name: Aypex::Emails CI
 on:
   pull_request:
     branches:
