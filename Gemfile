@@ -20,6 +20,6 @@ group :test, :development do
 end
 
 aypex_opts = {github: "aypex-io/aypex"}
-gem "aypex", path: "../aypex"
+gem "aypex", aypex_opts
 
 gemspec
