@@ -3,20 +3,10 @@
 
 # Aypex::Emails
 
-## Usage
-How to use my plugin.
-
 ## Installation
 
-Create a new rails app
-```bash
-rails new [app_name] --database=postgresql -a propshaft
-```
-
-Add this line to your application's Gemfile:
-
+Add this line to your existing Aypex application's Gemfile:
 ```ruby
-gem "aypex"
 gem "aypex-emails"
 ```
 
@@ -25,6 +15,7 @@ And then execute:
 bundle
 ```
 
+And then run the Aypex::Emails install command:
 ```bash
 bin/rails g aypex:emails:install
 ```
