@@ -13,7 +13,7 @@ platforms :ruby do
 end
 
 group :test, :development do
-  gem "aypex_dev_tools", path: "../aypex_dev_tools"
+  gem "aypex_dev_tools", github: "aypex-io/aypex_dev_tools"
   gem "debug"
   gem "email_spec"
   gem "propshaft"
