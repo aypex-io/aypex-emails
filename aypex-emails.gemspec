@@ -24,6 +24,4 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "aypex"
   spec.add_dependency "actionmailer"
-
-  spec.add_development_dependency "aypex_dev_tools"
 end
