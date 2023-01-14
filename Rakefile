@@ -10,6 +10,7 @@ task default: :spec
 
 task :test_app, [:user_class] do |_t, args|
   ENV["LIB_NAME"] = "aypex/emails"
+
   Aypex::DummyGeneratorHelper.inject_extension_requirements = true
   Rake::Task["common:test_app"].execute
 end

@@ -210,11 +210,11 @@ describe Aypex::OrderMailer, type: :mailer do
 
   context "with preference :send_core_emails set to false" do
     before do
-      Aypex.config { |config| config.send_core_emails = false }
+      Aypex.configure { |config| config.send_core_emails = false }
     end
 
     before do
-      Aypex.config { |config| config.send_core_emails = true }
+      Aypex.configure { |config| config.send_core_emails = true }
     end
 
     it "sends no email" do
