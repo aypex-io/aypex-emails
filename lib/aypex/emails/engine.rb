@@ -4,7 +4,7 @@ module Aypex
   module Emails
     class Engine < Rails::Engine
       isolate_namespace Aypex
-      engine_name "aypex-emails"
+      engine_name "aypex_emails"
 
       def self.activate
         Dir.glob(File.join(File.dirname(__FILE__), "../../../app/**/*_decorator*.rb")).sort.each do |c|

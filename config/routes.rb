@@ -1,2 +1,2 @@
-Aypex::Emails::Engine.routes.draw do
+Aypex::Engine.routes.draw do
 end
